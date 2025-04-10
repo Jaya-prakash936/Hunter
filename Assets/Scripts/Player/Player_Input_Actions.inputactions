@@ -38,7 +38,7 @@
                     "id": "0ad05390-9457-4a38-8c36-250aa95464c9",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Press",
+                    "interactions": "",
                     "initialStateCheck": false
                 },
                 {
@@ -47,7 +47,25 @@
                     "id": "04b42932-845f-41be-9af9-c8cf6a42208c",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Press",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "27967f62-28ee-45ed-a681-f37e36d8bc2f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Sprint",
+                    "type": "Button",
+                    "id": "e5a9f89c-679d-487a-8d8a-7bc3d55abf9b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
                     "initialStateCheck": false
                 }
             ],
@@ -275,10 +293,10 @@
                 {
                     "name": "",
                     "id": "441f6203-1e92-4264-8983-eab182ebf46f",
-                    "path": "<Keyboard>/r",
-                    "interactions": "Tap",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Keyboard&Mouse",
                     "action": "DrawWeapon",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -287,10 +305,32 @@
                     "name": "",
                     "id": "a299d2e3-c15a-45b2-b0a2-5751180f1cae",
                     "path": "<Mouse>/leftButton",
-                    "interactions": "Tap",
+                    "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Keyboard&Mouse",
                     "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cbdebfca-703e-45a2-858e-64c36c7b55e7",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "670061d9-a911-4a31-ab8a-e5a5e65e9b55",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Sprint",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

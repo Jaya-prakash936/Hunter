@@ -226,8 +226,8 @@
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@14.0.10\Editor\Material\Hair\ShaderGraph\HairSubTarget.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@14.0.10\Editor\Lighting\VolumetricLighting\SerializedLocalVolumetricFog.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@14.0.10\Editor\Material\UIBlocks\LightingShaderGraphGUI.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@14.0.10\Editor\Material\Water\ShaderGraph\Node\EvaluateFoamData_Water.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@14.0.10\Editor\RenderPipeline\Settings\SerializedHDRenderPipelineAsset.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@14.0.10\Editor\Material\Water\ShaderGraph\Node\EvaluateFoamData_Water.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@14.0.10\Editor\Material\UIBlocks\LitShaderGraphGUI.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@14.0.10\Editor\Material\Hair\ShaderGraph\CreateHairShaderGraph.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@14.0.10\Editor\Material\TerrainLit\TerrainLitGUI.cs" />

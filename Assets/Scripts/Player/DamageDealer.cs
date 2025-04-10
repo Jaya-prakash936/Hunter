@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class DamageDealer : MonoBehaviour
 {
+    public Enemy_controller enemy_Controller;
+    public Collider collider;
+    public LayerMask enemylayer;
     bool canDealDamage;
     List<GameObject> hasDealtDamage;
 
@@ -12,8 +15,10 @@ public class DamageDealer : MonoBehaviour
 
     void Start()
     {
+        collider = GetComponent<Collider>();
         canDealDamage = false;
         hasDealtDamage=new List<GameObject>();
+        enemy_Controller.Enemy_current_Health = 100f;
     }
 
 
@@ -23,14 +28,26 @@ public class DamageDealer : MonoBehaviour
         {
             RaycastHit hit;
 
-            int layerMask = 1 << 9;
-            if (Physics.Raycast(transform.position, -transform.up, out hit, layerMask))
+            
+            if (Physics.Raycast(transform.position, -transform.up, out hit, enemylayer))
             {
-                if(!hasDealtDamage.Contains(hit.transform.gameObject))
+                Enemy_controller enemy_Controller = hit.collider.GetComponent<Enemy_controller>();
+                if (hit.collider.CompareTag("Enemy") && enemy_Controller.Enemy_current_Health <= 0)
                 {
-                    print("damage");
-                    hasDealtDamage.Add(hit.transform.gameObject);
+                    //Destroy(hit.collider.gameObject);
+                    enemy_Controller.death();
                 }
+                else
+                {
+                    enemy_Controller.Enemy_current_Health -= 0.8f;
+                    Debug.Log("Enemy health is " + enemy_Controller.Enemy_current_Health);
+                }
+                //if (!hasDealtDamage.Contains(hit.transform.gameObject))
+                //{
+                //    print("damage");
+                //    hasDealtDamage.Add(hit.transform.gameObject);
+
+                //}
             }
         }
     }

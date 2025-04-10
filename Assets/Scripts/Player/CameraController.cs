@@ -34,5 +34,5 @@ public class CameraController : MonoBehaviour
         transform.rotation = TargetRotation;   
     }
 
-    public Quaternion planarRotation => Quaternion.Euler(0,RotationY,0);// not to move in up direction when facing up or down
+    public Quaternion planarRotation => Quaternion.Euler(0,RotationY,0);// not to move the player in up or down direction when facing up or down
 }
